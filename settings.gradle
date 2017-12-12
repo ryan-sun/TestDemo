@@ -1,0 +1,1 @@
+include ':app', ':lib.child1', ':network'

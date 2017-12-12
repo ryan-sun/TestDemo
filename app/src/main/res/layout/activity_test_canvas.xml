@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.ryan.testdemo.canvas.DrawColorView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:bgColor="#305cee"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.ryan.testdemo.canvas.DrawCircleView
+                android:layout_width="106dp"
+                android:layout_height="106dp"/>
+
+            <com.ryan.testdemo.canvas.DrawCircleView
+                android:layout_width="100dp"
+                android:layout_height="106dp"
+                app:bgColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.ryan.testdemo.canvas.DrawCircleView
+                android:layout_width="106dp"
+                android:layout_height="106dp"
+                app:fill="false"
+                app:stroke="1dp"
+                />
+
+            <com.ryan.testdemo.canvas.DrawCircleView
+                android:layout_width="106dp"
+                android:layout_height="106dp"
+                app:fill="false"
+                app:stroke="1dp"
+                app:bgColor="#000000"/>
+
+            <com.ryan.testdemo.canvas.DrawCircleView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:fill="false"
+                app:stroke="10dp"
+                app:bgColor="#000000"/>
+        </LinearLayout>
+        <com.ryan.testdemo.canvas.DrawRectView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:bgColor="#000000"/>
+        <com.ryan.testdemo.canvas.DrawArcView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"/>
+    </LinearLayout>
+</ScrollView>
+
