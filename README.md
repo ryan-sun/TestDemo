@@ -32,7 +32,9 @@ Tinker的使用方式如下，以gradle接入的release包为例：
 
 将备份的基准安装包与mapping文件输入到tinkerPatch的配置中；  
 
-运行tinkerPatchRelease，即可自动编译最新的安装包，并与输入基准包作差异，得到最终的补丁包。  
+运行tinkerPatchRelease，即可自动编译最新的安装包，并与输入基准包作差异，得到最终的补丁包。    
+微信Tinker热修复项目源码 https://github.com/Tencent/tinker/wiki  
+
 
 #Tinker使用内容完毕
 
