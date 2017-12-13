@@ -1,7 +1,8 @@
 # TestDemo
 测试项目，用来测试各种新内容的使用
 
-#Tinker使用内容说明\n
+#Tinker使用内容说明   
+
 Tinker使用：
 1、调用assembleDebug编译，我们会将编译过的包保存在build/bakApk中。
 2、修改build.gradle中的参数，将编译保存的安装包路径拷贝到tinkerPatch中的oldApk参数中。
