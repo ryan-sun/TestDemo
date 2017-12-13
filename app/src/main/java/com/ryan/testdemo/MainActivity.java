@@ -15,6 +15,7 @@ import com.orhanobut.logger.Logger;
 import com.ryan.child1.ChildActivity;
 import com.ryan.testdemo.canvas.TestCanvasActivity;
 import com.ryan.testdemo.douban.DoubanTopMovieActivity;
+import com.ryan.testdemo.tinker.TestTinkerActivity;
 
 import java.util.HashMap;
 
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
     private SliderLayout mSliderLayout;
     private Button btnTop;
     private Button btnCanvas;//定义画布
+    private Button btnTinker;//测试tinker入口按钮
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,6 +68,14 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TestCanvasActivity.class));
+            }
+        });
+
+        btnTinker = findViewById(R.id.btn_tinker);
+        btnTinker.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, TestTinkerActivity.class));
             }
         });
     }

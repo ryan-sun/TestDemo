@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryan.testdemo.tinker.TestTinkerActivity">
+    <Button
+        android:id="@+id/btn_load_patch"
+        android:text="LoadPatch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn_clean_patch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="CleanPatch"
+        app:layout_constraintTop_toBottomOf="@+id/btn_load_patch"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <Button
+        android:id="@+id/btn_show_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="ShowInfo"
+        app:layout_constraintTop_toBottomOf="@+id/btn_clean_patch"
+        tools:layout_editor_absoluteX="16dp"/>
+
+</android.support.constraint.ConstraintLayout>
